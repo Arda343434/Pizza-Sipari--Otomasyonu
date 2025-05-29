@@ -1,0 +1,411 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #ffebcd !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ff7e5f;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-primary:hover {
+  background-color: #feb47b;
+  transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px   rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer a {
+  color: #ff7e5f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #feb47b;
+}
+
+/* Forms */
+form .form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+form .form-control:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+/* Carousel */
+.custom-carousel {
+  width: 50%; /* Full width */
+  margin: auto; /* Center the carousel */
+}
+
+.carousel-item {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.card {
+  transition: transform 0.3s ease;
+  background: #f8f9fa;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item:hover img {
+  transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff;
+}
+
+.carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Card*/
+
+/* Gölgeleme ve yuvarlak köşe */
+.carousel-item img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Başlık ve yazı için stil */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Özel oklar */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Fade geçiş efekti */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+/* Indicator butonları */
+.carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+  background-color: #007bff;
+}
+
+/* İletişim Formu Şıklaştırma */
+form[action*="formspree"] {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: linear-gradient(120deg, #fffbe6 80%, #ffe5b4 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(255, 126, 95, 0.10), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 32px 28px 24px 28px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+form[action*="formspree"] label {
+  font-weight: 600;
+  color: #ff7e5f;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
+form[action*="formspree"] input[type="email"],
+form[action*="formspree"] textarea {
+  border: 1.5px solid #ffd6a0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-top: 6px;
+  resize: none;
+}
+form[action*="formspree"] input[type="email"]:focus,
+form[action*="formspree"] textarea:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 0 2px #ffe5b4;
+  outline: none;
+}
+form[action*="formspree"] textarea {
+  min-height: 90px;
+  max-height: 220px;
+}
+form[action*="formspree"] button[type="submit"] {
+  background: linear-gradient(90deg, #ff7e5f 60%, #feb47b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 8px rgba(255, 126, 95, 0.10);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+form[action*="formspree"] button[type="submit"]:hover {
+  background: linear-gradient(90deg, #feb47b 60%, #ff7e5f 100%);
+  transform: scale(1.04);
+}
+form[action*="formspree"] input[type="email"]::-webkit-input-placeholder,
+form[action*="formspree"] textarea::-webkit-input-placeholder {
+  color: #ffb07c;
+  opacity: 1;
+}
+form[action*="formspree"] input[type="email"]::-moz-placeholder,
+form[action*="formspree"] textarea::-moz-placeholder {
+  color: #ffb07c;
+  opacity: 1;
+}
+form[action*="formspree"] input[type="email"]:-ms-input-placeholder,
+form[action*="formspree"] textarea:-ms-input-placeholder {
+  color: #ffb07c;
+  opacity: 1;
+}
+form[action*="formspree"] input[type="email"]::placeholder,
+form[action*="formspree"] textarea::placeholder {
+  color: #ffb07c;
+  opacity: 1;
+}
+
+/* İletişim formu için daha iyi hizalama ve responsive görünüm */
+@media (max-width: 991px) {
+  .row.g-5.align-items-center > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .row.g-5.align-items-center {
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  form[action*="formspree"] {
+    max-width: 100%;
+    padding: 24px 10px 18px 10px;
+  }
+}
+
+/* İletişim formu kutusunu kart içinde ortala ve genişlet */
+.card .card-body > form[action*="formspree"] {
+  margin-top: 18px;
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* İletişim formu inputlarını ve butonunu kart ile uyumlu yap */
+.card .card-body form[action*="formspree"] input[type="email"],
+.card .card-body form[action*="formspree"] textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card .card-body form[action*="formspree"] button[type="submit"] {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* Etiketler arası boşluk ve hizalama */
+.card .card-body form[action*="formspree"] label {
+  margin-bottom: 0.5rem;
+  gap: 0.3rem;
+}
+
+/* Kart gölgesi ve arka planı daha yumuşak yap */
+.card.shadow-lg.border-0.p-4 {
+  background: linear-gradient(120deg, #fffbe6 80%, #ffe5b4 100%);
+  box-shadow: 0 8px 32px 0 rgba(255, 126, 95, 0.10);
+}
+
+/* Başlık ve ikon hizalaması */
+.card-body h1.text-warning {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Mobilde kart padding azalt */
+@media (max-width: 575px) {
+  .card.shadow-lg.border-0.p-4 {
+    padding: 10px !important;
+  }
+}
+
+/* İletişim formu: label ve inputları alt alta, butonu geniş ve modern, hizalı */
+.card .card-body > form[action*="formspree"] {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: stretch;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 100%;
+}
+.card .card-body form[action*="formspree"] label {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.2rem;
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card .card-body form[action*="formspree"] input[type="email"],
+.card .card-body form[action*="formspree"] textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1.5px solid #ffd6a0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-top: 2px;
+  margin-bottom: 0.5rem;
+  resize: none;
+  display: block;
+}
+.card .card-body form[action*="formspree"] textarea {
+  min-height: 80px;
+  max-height: 200px;
+}
+.card .card-body form[action*="formspree"] button[type="submit"] {
+  background: linear-gradient(90deg, #ff7e5f 60%, #feb47b 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px rgba(255, 126, 95, 0.10);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  align-self: stretch;
+  margin-left: 0;
+}
+.card .card-body form[action*="formspree"] button[type="submit"]:hover {
+  background: linear-gradient(90deg, #feb47b 60%, #ff7e5f 100%);
+  transform: scale(1.02);
+}
+
+/* Utility Classes */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.rounded-circle {
+  border: 2px solid #ff7e5f;
+}

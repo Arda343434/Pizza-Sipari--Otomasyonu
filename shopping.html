@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy Now </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js"></script>
+  </head>
+  <body class="bg-info-subtle">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-solid fa-pizza-slice"></i>O' La La Pizza
+        </a>
+        <span id="navbar-user" class="ms-auto"></span>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pizza</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shopping.html">Shopping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <a href="#" id="logout-link" class="nav-link" style="display:none;">Çıkış Yap</a>
+                <a href="login_register.html" id="login-link" class="nav-link">Login/Register</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+          <section class="py-5" style="background: linear-gradient(135deg, #f8fafc 60%, #ffe5b4 100%);">
+            <div class="container">
+              <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                  <div class="card shadow-lg border-0">
+                    <img src="img/image1.jpeg" class="card-img-top" alt="Pizza Resmi">
+                    <div class="card-body">
+                      <h3 class="card-title text-warning">Lezzetli Pizza</h3>
+                      <p class="card-text">Enfes pizza, taze malzemelerle yapılmış. Dilediğiniz malzemelerle özelleştirilebilir.</p>
+                      <h2 class="text-success fw-bold">₺49.99</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card shadow-lg border-0 p-4">
+                    <div class="card-body">
+                      <h4 class="mb-4 text-warning"><i class="fa-solid fa-cart-shopping me-2"></i>Pizzanı Seç ve Sipariş Ver</h4>
+                      <form>
+                        <div class="mb-3">
+                          <label for="pizzaType" class="form-label">Pizza Türü</label>
+                          <select class="form-select" id="pizzaType">
+                            <option value="margarita">Margarita</option>
+                            <option value="pepperoni">Pepperoni</option>
+                            <option value="vegetarian">Vejetaryen</option>
+                            <option value="hawaiian">Hawaiian</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="pizzaSize" class="form-label">Pizza Boyutu</label>
+                          <select class="form-select" id="pizzaSize">
+                            <option value="small">Küçük</option>
+                            <option value="medium">Orta</option>
+                            <option value="large">Büyük</option>
+                          </select>
+                        </div>
+                        <fieldset class="mb-3">
+                          <legend class="fs-6">Ekstra Malzemeler (Toppingler)</legend>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cheese" value="cheese">
+                            <label class="form-check-label" for="cheese">Ekstra Peynir</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="olives" value="olives">
+                            <label class="form-check-label" for="olives">Zeytin</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="mushrooms" value="mushrooms">
+                            <label class="form-check-label" for="mushrooms">Mantar</label>
+                          </div>
+                        </fieldset>
+                        <div class="mb-3">
+                          <label for="quantity" class="form-label">Miktar</label>
+                          <input type="number" class="form-control" id="quantity" value="1" min="1">
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Siparişi Tamamla</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Footer -->
+        <footer class="bg-light text-center text-lg-start">
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Pizza
+          </div>
+        </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+// --- PİZZA BİLGİLERİNİ YÜKLE ---
+window.addEventListener('DOMContentLoaded', function() {
+  // Kullanıcı giriş kontrolü
+  const username = localStorage.getItem('username');
+  if (!username) {
+    window.location.href = 'login_register.html';
+    return;
+  }
+  // Seçilen pizza bilgisi
+  const pizzaData = JSON.parse(localStorage.getItem('selectedPizza'));
+  // Pizza malzemeleri
+  const pizzaIngredients = {
+    'Bol Malzemeli Pizza': 'Jambon, Pepperoni, Sucuk, Sosis, Mısır, Mozarella Peyniri, Pizza Sos, Siyah Zeytin, Yeşil Biber, Domates, Mantar, Susam, Kekik',
+    'Karışık Pizza': 'Sucuk, Sosis, Mısır, Mozarella Peyniri, Pizza Sos, Yeşil Biber, Mantar',
+    'Süperos Pizza': 'Jambon, Sucuk, Sosis, Mozarella Peyniri, Pizza Sos, Siyah Zeytin, Domates, Kekik',
+    'Ocakbaşı Pizza': 'Sucuk, Kırmızı Köz Biber, Mozarella Peyniri, Pizza Sos, Yeşil Biber, Mantar, Pastırma, Kavurma Eti',
+    'İtalyano Pizza': 'Kırmızı Köz Biber, Mozarella Peyniri, Pizza Sos, Siyah Zeytin, Mantar, Küp Sucuk, Kekik',
+    'Mantar Sever Pizza': 'Mozarella Peyniri, Pizza Sos, Siyah Zeytin, Mantar, Yöresel Lezzetleri Baharat'
+  };
+  // Ekstra malzeme fiyatlarını belirle
+  const toppingPrices = {};
+  Object.values(pizzaIngredients).forEach(ingrList => {
+    ingrList.split(',').map(i => i.trim()).filter(i => i.length > 0).forEach(item => {
+      if (!toppingPrices[item]) {
+        toppingPrices[item] = Math.floor(Math.random() * 10) + 1; // 1-10 TL arası
+      }
+    });
+  });
+  // Pizza boyut fiyatlarını belirle (mantıklı şekilde: küçük = ana fiyat, orta = +30 TL, büyük = +50 TL)
+  let basePrice = parseFloat((pizzaData.price+'').replace(/[^\d,.]/g, '').replace(',', '.'));
+  const sizePrices = {
+    small: 0, // küçük boy ek fiyat yok
+    medium: 30, // orta boy +30 TL
+    large: 50 // büyük boy +50 TL
+  };
+
+  if (pizzaData) {
+    // Kartı güncelle
+    const pizzaImg = document.querySelector('.card-img-top');
+    const pizzaTitle = document.querySelector('.card-title.text-warning');
+    const pizzaPrice = document.querySelector('.fw-bold.text-success');
+    if (pizzaImg && pizzaTitle && pizzaPrice) {
+      pizzaImg.src = pizzaData.img;
+      pizzaTitle.textContent = pizzaData.name;
+      pizzaPrice.textContent = pizzaData.price;
+    }
+    // Pizza türü select'i sadece seçilen pizza ile güncelle
+    const pizzaTypeSelect = document.getElementById('pizzaType');
+    if (pizzaTypeSelect) {
+      pizzaTypeSelect.innerHTML = `<option selected>${pizzaData.name}</option>`;
+      pizzaTypeSelect.disabled = true;
+    }
+    // Pizza boyutu select'ini güncelle, fiyatları göster
+    const pizzaSizeSelect = document.getElementById('pizzaSize');
+    if (pizzaSizeSelect) {
+      pizzaSizeSelect.innerHTML = `
+        <option value="small">Küçük (₺${basePrice.toLocaleString('tr-TR', {minimumFractionDigits:2, maximumFractionDigits:2})})</option>
+        <option value="medium">Orta (₺${(basePrice+30).toLocaleString('tr-TR', {minimumFractionDigits:2, maximumFractionDigits:2})})</option>
+        <option value="large">Büyük (₺${(basePrice+50).toLocaleString('tr-TR', {minimumFractionDigits:2, maximumFractionDigits:2})})</option>
+      `;
+      pizzaSizeSelect.disabled = false;
+    }
+    // Ekstra malzemeler kısmına malzeme listesini checkbox ve fiyat ile yaz
+    const toppingsFieldset = document.querySelector('fieldset.mb-3');
+    if (toppingsFieldset) {
+      let ingr = pizzaIngredients[pizzaData.name] || '';
+      let ingrArr = ingr.split(',').map(i => i.trim()).filter(i => i.length > 0);
+      let checkboxes = ingrArr.map((item, idx) => `
+        <div class="form-check">
+          <input class="form-check-input topping-checkbox" type="checkbox" id="topping_${idx}" value="${item}">
+          <label class="form-check-label" for="topping_${idx}">${item} <span class='text-secondary' style='font-size:0.95em'>+${toppingPrices[item]} TL</span></label>
+        </div>
+      `).join('');
+      toppingsFieldset.innerHTML = `<legend class="fs-6">Ekstra Malzemeler (Toppingler)</legend>${checkboxes}`;
+    }
+    // Toplam fiyat alanı ekle
+    const form = document.querySelector('form');
+    if (form && !document.getElementById('totalPriceBox')) {
+      const priceBox = document.createElement('div');
+      priceBox.id = 'totalPriceBox';
+      priceBox.className = 'alert alert-warning text-center fw-bold';
+      priceBox.style.fontSize = '1.2em';
+      priceBox.innerText = 'Toplam: ' + pizzaData.price;
+      form.insertBefore(priceBox, form.querySelector('button[type="submit"]'));
+    }
+    // Fiyat güncelleme fonksiyonu (boyut fiyatını da ekle)
+    function updateTotalPrice() {
+      let basePrice = parseFloat((pizzaData.price+'').replace(/[^\d,.]/g, '').replace(',', '.'));
+      let quantity = parseInt(document.getElementById('quantity').value) || 1;
+      let toppingTotal = 0;
+      document.querySelectorAll('.topping-checkbox:checked').forEach(cb => {
+        toppingTotal += toppingPrices[cb.value] || 0;
+      });
+      let size = document.getElementById('pizzaSize').value;
+      let sizePrice = sizePrices[size] || 0;
+      let total = (basePrice + toppingTotal + sizePrice) * quantity;
+      document.getElementById('totalPriceBox').innerText = 'Toplam: ' + total.toLocaleString('tr-TR', {style:'currency', currency:'TRY'});
+    }
+    // Checkbox, miktar ve boyut inputlarına event ekle
+    setTimeout(() => {
+      document.querySelectorAll('.topping-checkbox').forEach(cb => {
+        cb.addEventListener('change', updateTotalPrice);
+      });
+      document.getElementById('quantity').addEventListener('input', updateTotalPrice);
+      document.getElementById('pizzaSize').addEventListener('change', updateTotalPrice);
+      updateTotalPrice();
+    }, 100);
+  }
+});
+
+// --- SİPARİŞ TAMAMLAMA ---
+document.querySelector('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  // Miktar ve diğer bilgiler
+  const quantity = document.getElementById('quantity').value;
+  // Ödeme modalı aç
+  showPaymentModal(quantity);
+});
+
+// --- ÖDEME MODALI ---
+function showPaymentModal(quantity) {
+  // Modal HTML
+  const modalHtml = `
+  <div class="modal fade stylish-modal" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title w-100 text-center stylish-title" id="paymentModalLabel">
+            <i class="fa-solid fa-credit-card me-2 text-primary"></i>Ödeme Ekranı
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <form id="paymentForm" class="stylish-form">
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label stylish-label">Kart Numarası</label>
+              <div class="input-group stylish-input-group">
+                <span class="input-group-text bg-white border-end-0"><i class="fa-regular fa-credit-card"></i></span>
+                <input type="text" class="form-control stylish-input border-start-0" id="cardNumber" maxlength="19" required placeholder="0000 0000 0000 0000">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="cardName" class="form-label stylish-label">Kart Üzerindeki İsim</label>
+              <input type="text" class="form-control stylish-input" id="cardName" required placeholder="Ad Soyad">
+            </div>
+            <div class="mb-3 d-flex gap-2">
+              <div class="flex-fill">
+                <label for="expDate" class="form-label stylish-label">Son Kullanma</label>
+                <input type="text" class="form-control stylish-input" id="expDate" maxlength="5" required placeholder="AA/YY">
+              </div>
+              <div class="flex-fill">
+                <label for="cvv" class="form-label stylish-label">CVV</label>
+                <input type="text" class="form-control stylish-input" id="cvv" maxlength="3" required placeholder="123">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success w-100 stylish-pay-btn mt-2">
+              <i class="fa-solid fa-lock me-2"></i>Ödemeyi Tamamla
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>`;
+  document.body.insertAdjacentHTML('beforeend', modalHtml);
+  var paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+  paymentModal.show();
+  document.getElementById('paymentForm').onsubmit = async function(ev) {
+    ev.preventDefault();
+    // Sipariş bilgilerini topla
+    const username = localStorage.getItem('username');
+    const pizzaData = JSON.parse(localStorage.getItem('selectedPizza'));
+    const pizza_name = pizzaData ? pizzaData.name : '';
+    const quantity = document.getElementById('quantity').value;
+    const toppings = Array.from(document.querySelectorAll('.topping-checkbox:checked')).map(cb => cb.value).join(', ');
+    const size = document.getElementById('pizzaSize').value;
+    // Siparişi backend'e gönder
+    try {
+      await fetch('http://localhost:3001/api/order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, pizza_name, toppings, quantity, size })
+      });
+    } catch (err) {}
+    alert('Siparişiniz Alındı Afiyet olsun!');
+    window.location.href = 'index.html';
+    paymentModal.hide();
+  };
+
+  // Kart numarası sadece rakam ve otomatik boşluk
+  const cardNumberInput = document.getElementById('cardNumber');
+  cardNumberInput.addEventListener('input', function(e) {
+    let value = this.value.replace(/\D/g, '');
+    if (value.length > 16) value = value.slice(0, 16);
+    let formatted = value.replace(/(\d{4})(?=\d)/g, '$1 ');
+    this.value = formatted;
+  });
+
+  // Son kullanma tarihi AA/YY formatı ve uyarı
+  const expDateInput = document.getElementById('expDate');
+  expDateInput.addEventListener('input', function(e) {
+    let value = this.value.replace(/[^\d]/g, '');
+    if (value.length > 4) value = value.slice(0, 4);
+    if (value.length > 2) value = value.slice(0,2) + '/' + value.slice(2);
+    this.value = value;
+  });
+  expDateInput.addEventListener('blur', function() {
+    const val = this.value;
+    const regex = /^(0[1-9]|1[0-2])\/(\d{2})$/;
+    if (!regex.test(val)) {
+      this.classList.add('is-invalid');
+      if (!this.nextElementSibling || !this.nextElementSibling.classList.contains('invalid-feedback')) {
+        const msg = document.createElement('div');
+        msg.className = 'invalid-feedback';
+        msg.innerText = 'Geçerli bir tarih girin (AA/YY)';
+        this.parentNode.appendChild(msg);
+      }
+    } else {
+      this.classList.remove('is-invalid');
+      if (this.nextElementSibling && this.nextElementSibling.classList.contains('invalid-feedback')) {
+        this.nextElementSibling.remove();
+      }
+    }
+  });
+
+  // CVV sadece 3 rakam ve uyarı
+  const cvvInput = document.getElementById('cvv');
+  cvvInput.addEventListener('input', function(e) {
+    let value = this.value.replace(/\D/g, '');
+    if (value.length > 3) value = value.slice(0, 3);
+    this.value = value;
+  });
+  cvvInput.addEventListener('blur', function() {
+    if (this.value.length !== 3) {
+      this.classList.add('is-invalid');
+      if (!this.nextElementSibling || !this.nextElementSibling.classList.contains('invalid-feedback')) {
+        const msg = document.createElement('div');
+        msg.className = 'invalid-feedback';
+        msg.innerText = 'CVV 3 haneli olmalı';
+        this.parentNode.appendChild(msg);
+      }
+    } else {
+      this.classList.remove('is-invalid');
+      if (this.nextElementSibling && this.nextElementSibling.classList.contains('invalid-feedback')) {
+        this.nextElementSibling.remove();
+      }
+    }
+  });
+  document.getElementById('paymentModal').addEventListener('hidden.bs.modal', function() {
+    document.getElementById('paymentModal').remove();
+  });
+}
+
+/* --- Stylish Payment Modal CSS --- */
+const stylishModalStyle = `
+.stylish-modal .modal-content {
+  background: linear-gradient(135deg, #f8fafc 80%, #e0ffe5 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+.stylish-title {
+  font-weight: 700;
+  color: #1e7e34;
+  letter-spacing: 1px;
+}
+.stylish-label {
+  font-weight: 500;
+  color: #1e7e34;
+}
+.stylish-input, .stylish-input-group .form-control {
+  border-radius: 0.75rem;
+  border: 1.5px solid #ced4da;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: 1.1em;
+}
+.stylish-input:focus, .stylish-input-group .form-control:focus {
+  border-color: #1e7e34;
+  box-shadow: 0 0 0 0.15rem rgba(30,126,52,.15);
+}
+.stylish-input-group .input-group-text {
+  border-radius: 0.75rem 0 0 0.75rem;
+  background: #fff;
+  border-right: 0;
+  color: #1e7e34;
+}
+.stylish-pay-btn {
+  font-size: 1.15em;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px 0 rgba(30,126,52,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.stylish-pay-btn:hover {
+  background: #218838;
+  box-shadow: 0 4px 16px 0 rgba(30,126,52,0.18);
+}
+`;
+if (!document.getElementById('stylishModalStyle')) {
+  const styleTag = document.createElement('style');
+  styleTag.id = 'stylishModalStyle';
+  styleTag.innerHTML = stylishModalStyle;
+  document.head.appendChild(styleTag);
+}
+</script>
+  </body>
+</html>
